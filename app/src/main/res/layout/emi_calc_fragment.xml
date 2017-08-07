@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/llLoanAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/tvLoanAmountText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Loant Amount"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+
+        <SeekBar
+            android:id="@+id/sbLoanAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/tvLoanAmountNum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="0"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textColor="#00FF00"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llRoi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/llLoanAmount"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/tvRoiText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="ROI"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+
+        <SeekBar
+            android:id="@+id/sbRoi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/tvRoiNum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="0"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textColor="#00FF00"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llLoanTenure"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/llRoi"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/tvLoanTenureText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:text="Loan Tenure"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+
+        <SeekBar
+            android:id="@+id/sbLoanTenure"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/tvLoanTenureNum"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="0"
+            android:textSize="20dp"
+            android:textColor="#00FF00"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/llLoanTenure"
+        android:layout_marginTop="20dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tvMonthlyPayRateText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="EMI Payable (Per Month)"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tvMonthlyPayRateNum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:textSize="30dp"
+            android:textColor="#00FF00"/>
+    </LinearLayout>
+
+
+</RelativeLayout>
